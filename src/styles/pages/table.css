@@ -1,0 +1,68 @@
+main {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+main h1  {
+    margin: 10px 0 30px;
+    font-size: 22px;
+}
+
+div.table {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    max-width: 100%;
+    overflow-x: auto;
+}
+ 
+div.table div.header {
+    background-color: var(--sec-clr);
+}
+
+div.table div.header div.item {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+div.table div.row {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.table div.row:not(.header) {
+    border-bottom: 1px solid var(--prim-clr);
+}
+
+div.table div.row div.item {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.table div.row:not(.header) div.item:nth-child(odd) {
+    background-color: #dde3e3;
+}
+
+div.table div.item.one {
+    width: 40px;
+}
+
+div.table div.item.two {
+    width: 200px;
+}
+
+div.table div.item.three {
+    width: 120px;
+}
+
+div.table div.item.four {
+    width: 150px;
+}

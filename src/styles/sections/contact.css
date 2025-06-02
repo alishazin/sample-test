@@ -1,0 +1,166 @@
+section#contact {
+    min-height: fit-content;
+    background-color: var(--sec-clr);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section#contact .top-area {
+    width: 100%;
+    max-width: 1000px;
+    height: fit-content;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#contact .top-area h3 {
+    color: var(--prim-clr);
+    font-size: 25px;
+    margin: 0;
+    margin: 10px 0;
+}
+
+section#contact .top-area div {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+section#contact .content-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    max-width: 100%;
+    width: 1000px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+section#contact .content-area .form {
+    width: calc(100% - 100px);
+    background-color: rgb(255, 255, 255, 0.4);
+    margin-right: 10px;
+    padding: 20px;
+}
+
+section#contact .content-area .form h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--prim-clr);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section#contact .content-area .form .separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+section#contact .content-area .form .textfield {
+    width: 100%;
+    margin: 20px 0;
+}
+
+section#contact .content-area .form .textfield label {
+    display: inline-block;
+    width: 100%;
+    color: var(--prim-clr);
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+section#contact .content-area .form .textfield input {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    border: 2px solid var(--sec-clr);
+    transition: border-color 0.1s;
+}
+
+section#contact .content-area .form .textfield input:focus {
+    border-color: #898989;
+}
+
+section#contact .content-area .form .textfield textarea {
+    width: 100%;
+    outline: line;
+    border: 2px solid var(--sec-clr);
+    padding: 8px 10px;
+    height: 80px;
+    resize: vertical;
+}
+
+section#contact .content-area .form .textfield textarea:focus {
+    outline: none;
+    border-color: #898989;
+}
+
+section#contact .content-area .form button {
+    width: 100%;
+    background: linear-gradient(to right, var(--prim-clr) 50%, var(--ter-clr) 50%);
+    background-size: 200%;
+    background-position-x: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: background-position-x 0.3s;
+}
+
+section#contact .content-area .form button:hover {
+    background-position-x: 0%;
+}
+
+section#contact .content-area .socials {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section#contact .content-area .socials a {
+    margin: 30px 0;
+}
+
+section#contact .content-area .socials a .icon {
+    font-size: 30px;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+section#contact .content-area .socials a .icon:hover {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+@media (max-width:650px) {
+    section#contact .content-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    section#contact .content-area .form {
+        width: 100%;
+    }
+    section#contact .content-area .socials {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    section#contact .content-area .socials a {
+        margin: 20px 10px;
+    }
+}
