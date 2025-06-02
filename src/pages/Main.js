@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import logo from '../logo.svg';
 import About from '../sections/About';
 import Contact from '../sections/Contact';
 import Home from '../sections/Home';
@@ -16,7 +15,7 @@ function Main() {
         const availIds = ["#home", "#about", "#services", "#contact"]
 
         for (let i of availIds) {
-            if (i == id) {
+            if (i === id) {
                 smoothScroll(false, document.querySelector(`section${i}`))
             }
         }

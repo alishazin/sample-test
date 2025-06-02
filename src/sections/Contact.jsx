@@ -34,16 +34,16 @@ function Contact() {
                 <button>Send Message</button>
             </div>
             <div className="socials">
-                <a target="_blank" href="mailto:alishazin1029@gmail.com">
+                <a href="mailto:alishazin1029@gmail.com">
                     <Icon icon={"material-symbols:mail-outline"} className="icon" />
                 </a>
-                <a target="_blank" href="https://x.com/AliShazin6">
+                <a href="https://x.com/AliShazin6">
                     <Icon icon={"ri:twitter-x-fill"} className="icon" />
                 </a>
-                <a target="_blank" href="https://www.github.com/alishazin/">
+                <a href="https://www.github.com/alishazin/">
                     <Icon icon={"mdi:github"} className="icon" />
                 </a>
-                <a target="_blank" href="https://www.linkedin.com/in/ali-shazin-6157b5251/">
+                <a href="https://www.linkedin.com/in/ali-shazin-6157b5251/">
                     <Icon icon={"mdi:linkedin"} className="icon" />
                 </a>
             </div>

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import useWindowSize from "../hooks/useWindowSize";
 import "../styles/sections/navbar.css"
 import { Icon } from "@iconify/react";
